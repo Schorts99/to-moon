@@ -23,10 +23,6 @@ const setName = () => {
     document.title = `Te Quiero ${name}`
     name_container.innerHTML = name
   }
-  
-  if(window.location.href !== `http://${window.location.host}/`) {
-    window.location.href = `http://${window.location.host}/`
-  }
 }
 
 const drawStars = () => {
