@@ -22,7 +22,7 @@ h1 {
   align-items: center;
 }
 .moon {
-  background-image: url(https://schorts99.github.io/to-moon/images/Moon.jpeg)
+  background-image: url(https://schorts99.github.io/to-moon/images/Moon.jpeg);
   background-size: cover;
   border-radius: 50%;
   box-shadow:0px 0px 100px #FFF;
