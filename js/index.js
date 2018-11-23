@@ -41,12 +41,12 @@ const drawStars = () => {
 }
 
 const getUrl = name => {
-  const encrypted = objectToGetParams({ token: CryptoJS.AES.encrypt(name, secret_key) });
+  const encrypted = `https://${window.location.hostname}/to-moon${objectToGetParams({ token: CryptoJS.AES.encrypt(name, secret_key) })}`
   return encrypted
 }
 
 const objectToGetParams = object => {
-  return Object.keys(object)
+  return '?' + Object.keys(object)
     .filter(key => !!object[key])
     .map(key => `${key}=${encodeURIComponent(object[key])}`)
     .join('&');
